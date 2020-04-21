@@ -1,13 +1,16 @@
 SwiftyRSA
 =========
 
-**Maintainer(s):** [@starback](https://github.com/starback)
+This is a clone of [TakeScoop/SwiftyRSA](https://github.com/TakeScoop/SwiftyRSA), updated to be used with Swift 5 and above. The reason for this branch was first and foremost to be able to use the Swift Package Manager. 
 
-[![](https://img.shields.io/cocoapods/v/SwiftyRSA.svg)](https://cocoapods.org/pods/SwiftyRSA)
-![](https://img.shields.io/badge/carthage-compatible-brightgreen.svg)
+**Maintainer(s):** [@bonkowski](https://github.com/bonkowski)
+
+![](https://img.shields.io/badge/language-swift_5+-brightgreen.svg)
 ![](https://img.shields.io/cocoapods/p/SwiftyRSA.svg)
-![](https://img.shields.io/badge/language-swift_3.2/4.2-brightgreen.svg)
-[![](https://circleci.com/gh/TakeScoop/SwiftyRSA.png?style=shield&circle-token=03e95e0cd05dab2e159cf65d6e62de1d1d84148e)](https://circleci.com/gh/TakeScoop/SwiftyRSA)
+![](https://img.shields.io/badge/spm-compatible-brightgreen.svg)
+![](https://img.shields.io/badge/carthage-compatible-brightgreen.svg)(probabably)
+
+
 
 **Public key RSA encryption in Swift.**
 
@@ -16,33 +19,19 @@ SwiftyRSA is used in the [Scoop](https://www.takescoop.com/) [iOS app](https://i
 Installation
 ------------
 
-### Swift 3.2 / 4.0+
+### Swift 5+
 
-With Cocoapods:
+#### Swift Package Manager
 
-```
-pod 'SwiftyRSA'
-```
+You can use [Swift Package Manager](https://swift.org/package-manager/) and specify dependency in `Package.swift` by adding this:
 
-With Carthage:
-
-```
-github "TakeScoop/SwiftyRSA"
+```swift
+.package(url: "https://github.com/bonkowski/SwiftyRSA", from: "1.6.2")
 ```
 
-### Swift 2.3
+Please note that I haven't tested this fork of SwiftyRSA using CocoaPods or Carthage. Carthage should work, but I'm not sure about CocoaPods. If you need this to work, you should use the [original](https://github.com/TakeScoop/SwiftyRSA).
 
-The `swift-2.3` branch is built out of SwiftRSA 0.4.0 and is not actively maintained. If you'd like to use the latest features of SwiftyRSA, please use swift 3.0.
 
-```
-pod 'SwiftyRSA', :git => 'git@github.com:TakeScoop/SwiftyRSA.git', :branch => 'swift-2.3'
-```
-
-### Objective-C
-
-```
-pod 'SwiftyRSA/ObjC'
-```
 
 
 Quick Start
@@ -229,6 +218,7 @@ Inspired from
  - <http://blog.flirble.org/2011/01/05/rsa-public-key-openssl-ios/>
  - <https://github.com/lancy/RSADemo>
  - <https://github.com/btnguyen2k/swift-rsautils>
+ 
 
 License
 -------
