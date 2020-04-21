@@ -33,11 +33,11 @@ public extension Key {
     /// - Returns: Data of the key, Base64-encoded
     /// - Throws: SwiftyRSAError
     func base64String() throws -> String {
-        return try data().base64EncodedString()
+        try data().base64EncodedString()
     }
     
     func data() throws -> Data {
-        return try SwiftyRSA.data(forKeyReference: reference)
+        try SwiftyRSA.data(forKeyReference: reference)
     }
     
     /// Creates a public key with a base64-encoded string.

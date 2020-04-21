@@ -207,11 +207,11 @@ public class _objc_EncryptedMessage: NSObject, Message, ObjcBridgeable { // swif
     fileprivate let swiftValue: EncryptedMessage
     
     @objc public var base64String: String {
-        return swiftValue.base64String
+        swiftValue.base64String
     }
     
     @objc public var data: Data {
-        return swiftValue.data
+        swiftValue.data
     }
     
     public required init(swiftValue: EncryptedMessage) {
@@ -259,11 +259,11 @@ public class _objc_Signature: NSObject, ObjcBridgeable { // swiftlint:disable:th
     fileprivate let swiftValue: Signature
     
     @objc public var base64String: String {
-        return swiftValue.base64String
+        swiftValue.base64String
     }
     
     @objc public var data: Data {
-        return swiftValue.data
+        swiftValue.data
     }
     
     public required init(swiftValue: Signature) {

@@ -51,6 +51,6 @@ public class Signature {
     
     /// Returns the base64 representation of the signature.
     public var base64String: String {
-        return data.base64EncodedString()
+        data.base64EncodedString()
     }
 }

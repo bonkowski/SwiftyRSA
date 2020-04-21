@@ -20,7 +20,7 @@ private class Scanner {
     
     /// Returns whether there is no more data to consume
     var isComplete: Bool {
-        return index >= data.count
+        index >= data.count
     }
     
     /// Creates a scanner with provided data
